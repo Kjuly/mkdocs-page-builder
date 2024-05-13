@@ -16,11 +16,11 @@ jobs:
         uses: Kjuly/mkdocs-page-builder@main
 ```
 
-If you have multiple config files to handle multi-languages, you can provide `config-files`:
+If you have multiple config files to handle multi-languages, you can provide `config_files`:
 ```yaml
 uses: Kjuly/mkdocs-page-builder@main
 with:
-  config-files: |-
+  config_files: |-
     config/en/mkdocs.yml
     config/zh-Hans/mkdocs.yml
 ```
