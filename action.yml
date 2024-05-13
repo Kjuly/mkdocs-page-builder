@@ -9,7 +9,7 @@ branding:
   color: 'white'
 
 inputs:
-  config-files:
+  config_files:
     description: |-
       Newline-separated list of config files to build.
       e.g.,
@@ -23,4 +23,4 @@ runs:
   using: docker
   image: 'Dockerfile'
   args:
-    - ${{ inputs.config-files }}
+    - ${{ inputs.config_files }}
