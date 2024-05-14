@@ -7,7 +7,7 @@ printf 'Config files:\n%s\n' "$config_files"
 if [ -z "$config_files" ]; then
   mkdocs build
 else
-  IFS=$'\n'
+  IFS="$(printf '\n\b')"
   for config_file in $config_files; do
     echo "- $config_file"
     mkdocs build --config-file "$config_file"
