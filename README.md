@@ -29,7 +29,7 @@ with:
 
 The build page will be stored in `${{ github.workspace }}/build`.
 
-For output usage, please refer to [MkDocs Page Publisher](mkdocs-page-publisher), which will publish to Github Pages.
+For output usage, please refer to [MkDocs Page Publisher][mkdocs-page-publisher], which will publish to Github Pages.
 
 
   [mkdocs-page-publisher]: https://github.com/Kjuly/mkdocs-page-publisher
