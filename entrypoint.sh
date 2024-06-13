@@ -4,9 +4,8 @@ config_files=$1
 
 printf 'Config files:\n%s\n' "$config_files"
 
-if [ -d ".venv" ]; then
-  source .venv/bin/activate
-fi
+# shellcheck source=/dev/null
+. "$(dirname "$0")/.venv/bin/activate"
 
 if [ -z "$config_files" ]; then
   mkdocs build
