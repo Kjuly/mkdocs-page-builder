@@ -9,6 +9,10 @@ branding:
   color: 'white'
 
 inputs:
+  requirements_file:
+    description: A file containing a list of required packages, e.g., 'requirements.txt'.
+    required: false
+    default: ''
   config_files:
     description: |-
       Newline-separated list of config files to build.
@@ -23,4 +27,5 @@ runs:
   using: docker
   image: 'Dockerfile'
   args:
+    - ${{ inputs.requirements_file }}
     - ${{ inputs.config_files }}
